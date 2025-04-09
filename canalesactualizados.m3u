@@ -7,7 +7,7 @@ https://stream.gia.tv/giatv/giatv-carcolhd1carcolhd1/carcolhd1carcolhd1/chunks.m
 https://stream.gia.tv/giatv/giatv-carcolhd2carcolhd2/carcolhd2carcolhd2/chunks.m3u8
 
 #EXTINF:-1 tvg-id="RCN.co" tvg-name="RCN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a3/CanalRCN2023.png", RCN
-http://190.2.212.209:8050/play/a0n2
+http://190.2.212.209:8050/play/a0lt
 
 #EXTINF:-1 tvg-id="Canal 1.co" tvg-name="Canal Uno" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Canal1Colombia2024.svg/190px-Canal1Colombia2024.svg.png", Canal Uno
 https://stream.gia.tv/giatv/giatv-TvUnoColTvUnoCol/TvUnoColTvUnoCol/chunks.m3u8
@@ -32,3 +32,6 @@ https://stream.gia.tv/giatv/giatv-ctybog1ctybog1/ctybog1ctybog1/chunks.m3u8
 
 #EXTINF:-1 tvg-id="Canal Capital.co" tvg-name="Canal Capital" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/2020_Canal_Capital_logo.svg/1200px-2020_Canal_Capital_logo.svg.png", Canal Capital
 https://cdns.livewave.co:19360/canalcapital/canalcapital.m3u8
+
+#EXTINF:-1 tvg-id="Win Sports.co" tvg-name="Win Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Win_Sports_nuevo_logo.svg/1200px-Win_Sports_nuevo_logo.svg.png", Win Sports
+http://190.2.212.209:8050/play/a0n2
