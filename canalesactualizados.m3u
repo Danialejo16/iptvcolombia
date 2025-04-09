@@ -6,6 +6,9 @@ https://stream.gia.tv/giatv/giatv-carcolhd1carcolhd1/carcolhd1carcolhd1/chunks.m
 #EXTINF:-1 tvg-id="Caracol.co" tvg-name="Caracol TV HD2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/CaracolHD2-2023.png/190px-CaracolHD2-2023.png", Caracol TV HD2
 https://stream.gia.tv/giatv/giatv-carcolhd2carcolhd2/carcolhd2carcolhd2/chunks.m3u8
 
+#EXTINF:-1 tvg-id="RCN HD.co" tvg-name="RCN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a3/CanalRCN2023.png", RCN
+http://190.61.43.117:45000/play/a01m
+
 #EXTINF:-1 tvg-id="Canal 1.co" tvg-name="Canal Uno" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Canal1Colombia2024.svg/190px-Canal1Colombia2024.svg.png", Canal Uno
 https://stream.gia.tv/giatv/giatv-TvUnoColTvUnoCol/TvUnoColTvUnoCol/chunks.m3u8
 
