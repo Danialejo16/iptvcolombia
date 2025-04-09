@@ -7,7 +7,7 @@ https://stream.gia.tv/giatv/giatv-carcolhd1carcolhd1/carcolhd1carcolhd1/chunks.m
 https://stream.gia.tv/giatv/giatv-carcolhd2carcolhd2/carcolhd2carcolhd2/chunks.m3u8
 
 #EXTINF:-1 tvg-id="RCN.co" tvg-name="RCN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a3/CanalRCN2023.png", RCN
-http://ooyalahd2-f.akamaihd.net/z/saleslatam_test06@180219/manifest.f4m?hdcore=2.10.3&g=PEKPFNBGBTUV
+https://muddy-shadow-8515.alejodle3.workers.dev/
 
 #EXTINF:-1 tvg-id="Canal 1.co" tvg-name="Canal Uno" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Canal1Colombia2024.svg/190px-Canal1Colombia2024.svg.png", Canal Uno
 https://stream.gia.tv/giatv/giatv-TvUnoColTvUnoCol/TvUnoColTvUnoCol/chunks.m3u8
