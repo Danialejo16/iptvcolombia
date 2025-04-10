@@ -3,7 +3,7 @@
 #EXTINF:-1 tvg-id="Caracol.co" tvg-name="Caracol TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/29/Caracol_Televisi%C3%B3n_logo_2023.png", Caracol TV
 https://stream.gia.tv/giatv/giatv-carcolhd1carcolhd1/carcolhd1carcolhd1/chunks.m3u8
 
-#EXTINF:-1 tvg-id="Caracol.co" tvg-name="Caracol TV HD2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/CaracolHD2-2023.png/190px-CaracolHD2-2023.png", Caracol TV HD2
+#EXTINF:-1 tvg-id="Caracol HD.co" tvg-name="Caracol TV HD2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/CaracolHD2-2023.png/190px-CaracolHD2-2023.png", Caracol TV HD2
 https://stream.gia.tv/giatv/giatv-carcolhd2carcolhd2/carcolhd2carcolhd2/chunks.m3u8
 
 #EXTINF:-1 tvg-id="RCN.co" tvg-name="RCN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a3/CanalRCN2023.png", RCN
