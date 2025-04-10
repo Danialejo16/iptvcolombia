@@ -1,4 +1,4 @@
-🎉Lista IPTV de Canales Colombianos
+🎉**Lista IPTV de Canales Colombianos**
 
 Disfruta de la mejor selección de canales nacionales en alta calidad y totalmente gratis. Nuestra lista incluye:
 
@@ -12,4 +12,4 @@ Disfruta de la mejor selección de canales nacionales en alta calidad y totalmen
 
 🔗 Ideal para usar en aplicaciones IPTV o dispositivos compatibles.
 
-📌 Atribución: Hecho por Danialejo
+📌**Hecho por Danialejo**
