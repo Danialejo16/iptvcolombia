@@ -7,10 +7,10 @@ https://live20.bozztv.com/giatv/giatv-c1tensixmay/c1tensixmay/chunks.m3u8
 https://live20.bozztv.com/giatv/giatv-c2maytensix/c2maytensix/chunks.m3u8
 
 #EXTINF:-1 tvg-id="Canal 1.co" tvg-name="Canal Uno" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Canal1Colombia2024.svg/190px-Canal1Colombia2024.svg.png", Canal Uno
-https://stream.gia.tv/giatv/giatv-uno1604/uno1604/chunks.m3u8
+https://live20.bozztv.com/giatv/giatv-unomaytensix/unomaytensix/chunks.m3u8
 
 #EXTINF:-1 tvg-id="Señal Colombia.co" tvg-name="Señal Colombia" tvg-logo="https://i0.wp.com/www.chatytvgratis.live/wp-content/uploads/2014/11/logo-senal-colombia-tv.png?fit=368%2C368&ssl=1", Señal Colombia
-https://stream.gia.tv/giatv/giatv-sc1604/sc1604/chunks.m3u8
+https://live20.bozztv.com/giatv/giatv-scmaytensix/scmaytensix/chunks.m3u8
 
 #EXTINF:-1 tvg-id="Canal Institucional.co" tvg-name="Canal Institucional (Geobloqueado)" tvg-logo="https://directostv.teleame.com/wp-content/uploads/2018/02/Canal-Institucional-Colombia-en-vivo-Online.png", Canal Institucional
 https://streaming.rtvc.gov.co/TV_CanalInstitucional_live/smil:live.smil/playlist.m3u8
