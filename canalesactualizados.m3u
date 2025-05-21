@@ -1,10 +1,10 @@
 #EXTM3U url-tvg="https://www.open-epg.com/files/colombia1.xml"
 
 #EXTINF:-1 tvg-id="Caracol.co" tvg-name="Caracol TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/29/Caracol_Televisi%C3%B3n_logo_2023.png", Caracol TV
-https://stream.gia.tv/giatv/giatv-c11604/c11604/chunks.m3u8
+https://live20.bozztv.com/giatv/giatv-c1tensixmay/c1tensixmay/chunks.m3u8
 
 #EXTINF:-1 tvg-id="Caracol HD.co" tvg-name="Caracol TV HD2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/CaracolHD2-2023.png/190px-CaracolHD2-2023.png", Caracol TV HD2
-https://stream.gia.tv/giatv/giatv-c21604/c21604/chunks.m3u8
+https://live20.bozztv.com/giatv/giatv-c2maytensix/c2maytensix/chunks.m3u8
 
 #EXTINF:-1 tvg-id="Canal 1.co" tvg-name="Canal Uno" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Canal1Colombia2024.svg/190px-Canal1Colombia2024.svg.png", Canal Uno
 https://stream.gia.tv/giatv/giatv-uno1604/uno1604/chunks.m3u8
