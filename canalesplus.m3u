@@ -1,3 +1,5 @@
+url-tvg="https://www.open-epg.com/files/spain1.xml"
+
 #EXTINF:-1 tvg-id="LA 1.es" tvg-name="La 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Logo_La_1.svg/2295px-Logo_La_1.svg.png", La 1
 https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr_576.m3u8
 
