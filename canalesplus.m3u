@@ -13,4 +13,4 @@ https://raw.githubusercontent.com/Danialejo16/iptvcolombia/refs/heads/main/anten
 https://rrsatrtmp.tulix.tv/tvge1/tvge1multi.smil/chunklist_w1950145542_b1500000.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="KCTV" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Korean_Central_Television_2005.svg/1200px-Korean_Central_Television_2005.svg.png", KCTV
-https://tv.nknews.org/tvdash/stream-31256680.m4a
+https://tv.nknews.org/tvdash/stream.mpd
