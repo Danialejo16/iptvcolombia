@@ -1,4 +1,5 @@
 #EXTM3U url-tvg="https://www.open-epg.com/files/colombia1.xml"
+url-tvg="https://www.open-epg.com/files/spain1.xml"
 
 #EXTINF:-1 tvg-id="Caracol.co" tvg-name="Caracol TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/29/Caracol_Televisi%C3%B3n_logo_2023.png", Caracol TV
 https://live20.bozztv.com/giatv/giatv-c1tensixmay/c1tensixmay/chunks.m3u8
@@ -20,3 +21,6 @@ https://live-edge-eu-1.cdn.enetres.net/6E5C615AA5FF4123ACAF0DAB57B7B8DC021/live-
 
 #EXTINF:-1 tvg-id="" tvg-name="TVGE" tvg-logo="https://i.imgur.com/DLWW6CR.png", TVGE
 https://rrsatrtmp.tulix.tv/tvge1/tvge1multi.smil/chunklist_w1950145542_b1500000.m3u8
+
+#EXTINF:-1 tvg-id="LA 1.es" tvg-name="La 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Logo_La_1.svg/2295px-Logo_La_1.svg.png", La 1
+https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr_576.m3u8
