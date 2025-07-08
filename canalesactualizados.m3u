@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://www.open-epg.com/files/colombia1.xml,url-tvg="https://www.open-epg.com/files/spain1.xml"
+#EXTM3U url-tvg="https://www.open-epg.com/files/colombia1.xml"
 
 #EXTINF:-1 tvg-id="Caracol.co" tvg-name="Caracol TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/29/Caracol_Televisi%C3%B3n_logo_2023.png", Caracol TV
 https://live20.bozztv.com/giatv/giatv-c1tensixmay/c1tensixmay/chunks.m3u8
