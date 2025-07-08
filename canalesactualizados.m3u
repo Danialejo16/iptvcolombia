@@ -25,7 +25,7 @@ https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr_576.m3u8
 https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr_576.m3u8
 
 #EXTINF:-1 tvg-id="Antena 3.es" tvg-name="Antena 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Antena_3_%282017%29.svg/250px-Antena_3_%282017%29.svg.png", Antena 3
-https://atres-live.atresmedia.com/2796acb2e4137988b3681582bef61f4a189ce745_ES_1752009000_1752037740/h264/live/antena3/bitrate_4.m3u8
+https://raw.githubusercontent.com/Danialejo16/iptvcolombia/refs/heads/main/Antena3.m3u
 
 #EXTINF:-1 tvg-id="" tvg-name="TVGE" tvg-logo="https://i.imgur.com/DLWW6CR.png", TVGE
 https://rrsatrtmp.tulix.tv/tvge1/tvge1multi.smil/chunklist_w1950145542_b1500000.m3u8
