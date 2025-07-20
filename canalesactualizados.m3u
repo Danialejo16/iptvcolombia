@@ -10,10 +10,10 @@ https://cdn3.chatytvgratis.live/hls/stream2.m3u8
 https://mdstrm.com/live-stream-playlist/5a5e1c2568b1910913db5fe2.m3u8
 
 #EXTINF:-1 tvg-id="Señal Colombia.co" tvg-name="Señal Colombia" tvg-logo="https://i0.wp.com/www.chatytvgratis.live/wp-content/uploads/2014/11/logo-senal-colombia-tv.png?fit=368%2C368&ssl=1", Señal Colombia
-https://live20.bozztv.com/giatv/giatv-scmaytensix/scmaytensix/chunks.m3u8
+https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/chunklist_b1500000.m3u8
 
 #EXTINF:-1 tvg-id="Canal Institucional.co" tvg-name="Canal Institucional (Geobloqueado)" tvg-logo="https://directostv.teleame.com/wp-content/uploads/2018/02/Canal-Institucional-Colombia-en-vivo-Online.png", Canal Institucional
-https://streaming.rtvc.gov.co/TV_CanalInstitucional_live/smil:live.smil/playlist.m3u8
+https://streaming.rtvc.gov.co/TV_CanalInstitucional_live/smil:live.smil/chunklist_b1500000.m3u8
 
 #EXTINF:-1 tvg-id="Telepacifico.co" tvg-name="Telepacífico" tvg-logo="https://colombia.mom-gmr.org/uploads/_processed_/b/c/csm_517-941_import_ecd4011511.png", Telepacífico
 https://live-edge-eu-1.cdn.enetres.net/6E5C615AA5FF4123ACAF0DAB57B7B8DC021/live-telepacifico/index.m3u8
