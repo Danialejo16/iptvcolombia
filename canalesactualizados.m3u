@@ -1,13 +1,13 @@
 #EXTM3U url-tvg="https://www.open-epg.com/files/colombia1.xml"
 
 #EXTINF:-1 tvg-id="Caracol.co" tvg-name="Caracol TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/29/Caracol_Televisi%C3%B3n_logo_2023.png", Caracol TV
-https://live20.bozztv.com/giatv/giatv-c1tensixmay/c1tensixmay/chunks.m3u8
+https://cdn3.chatytvgratis.live/hls/stream1.m3u8
 
 #EXTINF:-1 tvg-id="Caracol HD.co" tvg-name="Caracol TV HD2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/CaracolHD2-2023.png/190px-CaracolHD2-2023.png", Caracol TV HD2
-https://live20.bozztv.com/giatv/giatv-c2maytensix/c2maytensix/chunks.m3u8
+https://cdn3.chatytvgratis.live/hls/stream2.m3u8
 
 #EXTINF:-1 tvg-id="Canal 1.co" tvg-name="Canal Uno" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Canal1Colombia2024.svg/190px-Canal1Colombia2024.svg.png", Canal Uno
-https://live20.bozztv.com/giatv/giatv-unomaytwo8/unomaytwo8/chunks.m3u8
+https://mdstrm.com/live-stream-playlist/5a5e1c2568b1910913db5fe2.m3u8
 
 #EXTINF:-1 tvg-id="Señal Colombia.co" tvg-name="Señal Colombia" tvg-logo="https://i0.wp.com/www.chatytvgratis.live/wp-content/uploads/2014/11/logo-senal-colombia-tv.png?fit=368%2C368&ssl=1", Señal Colombia
 https://live20.bozztv.com/giatv/giatv-scmaytensix/scmaytensix/chunks.m3u8
