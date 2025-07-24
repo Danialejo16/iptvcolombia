@@ -24,7 +24,7 @@
 
 ---
 
-## 🌍 También te puede interesar...
+## 🇨🇴 También te puede interesar...
 
 ### 🎉 [**Lista IPTV de Canales Colombianos** + extras](https://danialejo16.github.io/iptvcolombia/)
 
