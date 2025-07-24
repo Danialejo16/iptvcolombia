@@ -3,109 +3,486 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Listas IPTV España Gratis</title>
+  <title>📺 Listas IPTV España & Colombia – Gratis y Actualizadas</title>
+  <meta name="description" content="Las mejores listas IPTV gratuitas de España, Colombia y otros canales interesantes. Con animaciones, botones modernos y copia rápida de URLs." />
   <style>
+    :root {
+      --bg: #0f1116;
+      --surface: #161a21;
+      --surface-2: #1d222b;
+      --text: #e6e9ef;
+      --muted: #9aa4b2;
+      --primary: #2d8cff;
+      --primary-dark: #1e6ad1;
+      --accent: #ff4757;
+      --success: #2ed573;
+      --warning: #ffa502;
+      --radius: 18px;
+      --blur: 18px;
+      --maxw: 1080px;
+      --shadow: 0 20px 40px -20px rgba(0,0,0,.6);
+      --gradient: linear-gradient(135deg, #2d8cff, #9b59b6, #ff4757);
+    }
+
+    * { box-sizing: border-box; }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f9;
-      color: #333;
       margin: 0;
-      padding: 20px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+    }
+
+    /* ===== Animated gradient background (hero) ===== */
+    .hero {
+      position: relative;
+      min-height: 75vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 5rem 1.5rem 3rem;
+      overflow: hidden;
+      background: radial-gradient(circle at 20% 20%, rgba(45,140,255,.3), transparent 50%),
+                  radial-gradient(circle at 80% 30%, rgba(255,71,87,.15), transparent 60%),
+                  radial-gradient(circle at 50% 80%, rgba(155,89,182,.15), transparent 60%),
+                  var(--bg);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -50%;
+      background: conic-gradient(from 0deg, rgba(45,140,255,.15), rgba(155,89,182,.15), rgba(255,71,87,.15), rgba(45,140,255,.15));
+      animation: rotate 16s linear infinite;
+      filter: blur(120px);
+      z-index: -1;
+    }
+    @keyframes rotate {
+      to { transform: rotate(360deg); }
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
     }
 
     h1 {
-      text-align: center;
-      color: #2c3e50;
-      margin-bottom: 30px;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      margin: 0 0 1rem;
+      font-weight: 800;
+    }
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      margin: 0 0 1rem;
+      font-weight: 700;
+    }
+    p.lead {
+      max-width: 780px;
+      margin: 0 auto 2.5rem;
+      color: var(--muted);
+      font-size: 1.1rem;
     }
 
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-      margin-bottom: 30px;
-      padding: 20px;
-      transition: transform 0.3s;
+    /* ===== Navigation ===== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      backdrop-filter: blur(10px);
+      background: rgba(15,17,22,0.65);
+      border-bottom: 1px solid rgba(255,255,255,.04);
     }
-
-    .card:hover {
-      transform: translateY(-5px);
+    .nav {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .75rem 1rem;
     }
-
-    .card h2 {
-      color: #2980b9;
-      margin-top: 0;
-    }
-
-    .btn-group {
-      margin-top: 15px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #3498db;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 6px;
+    .nav a.brand {
+      font-weight: 700;
       text-decoration: none;
-      font-weight: bold;
-      margin-right: 10px;
-      transition: background 0.3s;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 600;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+
+    /* ===== Cards ===== */
+    .section {
+      margin: 4rem 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.25rem 1.25rem 1rem;
+      border: 1px solid rgba(255,255,255,.04);
+      position: relative;
+      overflow: hidden;
+      transform: translateY(10px);
+      opacity: 0;
+      transition: transform .6s cubic-bezier(.2, .8, .2, 1), opacity .6s;
+    }
+    .card.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .card h3 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .flag {
+      font-size: 1.45rem;
+    }
+    .tag {
+      display: inline-block;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.05);
+      backdrop-filter: blur(5px);
+      border-radius: 999px;
+      padding: .15rem .6rem;
+      font-size: .8rem;
+      color: var(--muted);
+      margin-left: .35rem;
     }
 
-    .btn:hover {
-      background: #2980b9;
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      margin: 1rem 0 .2rem;
+    }
+    .btn {
+      --btn-bg: var(--primary);
+      --btn-bg-h: var(--primary-dark);
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      text-decoration: none;
+      background: var(--btn-bg);
+      color: #fff;
+      border: 0;
+      border-radius: 12px;
+      padding: .7rem 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform .1s, background .2s;
+    }
+    .btn:hover { background: var(--btn-bg-h); }
+    .btn:active { transform: scale(.985); }
+
+    .btn.outline {
+      --btn-bg: transparent;
+      --btn-bg-h: rgba(255,255,255,.04);
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(10px);
     }
 
-    .info {
-      font-size: 0.95em;
-      color: #555;
-      margin-top: 10px;
+    .copy-group {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--surface-2);
+      border: 1px solid rgba(255,255,255,.04);
+      border-radius: 12px;
+      padding: .5rem .6rem .5rem .8rem;
+      margin-top: .75rem;
+    }
+    .copy-group code {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      color: var(--muted);
+      font-size: .85rem;
+    }
+    .copy-btn {
+      margin-left: auto;
+      background: rgba(255,255,255,.06);
+      border: 0;
+      color: var(--text);
+      border-radius: 8px;
+      padding: .35rem .6rem;
+      cursor: pointer;
+      font-size: .85rem;
+      transition: background .2s;
+    }
+    .copy-btn:hover {
+      background: rgba(255,255,255,.1);
     }
 
-    @media screen and (max-width: 600px) {
-      .btn {
-        display: block;
-        margin-bottom: 10px;
-        width: 100%;
-        text-align: center;
-      }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      font-size: .8rem;
+      background: rgba(255,255,255,.06);
+      border-radius: 999px;
+      padding: .2rem .6rem;
+      margin-top: .6rem;
+      color: var(--muted);
+    }
+
+    /* TV-style buttons */
+    .btn.tv {
+      --btn-bg: #1f2430;
+      --btn-bg-h: #252b39;
+      border: 1px solid rgba(255,255,255,.06);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 8px 20px -12px rgba(0,0,0,.7);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: 1.5rem;
+    }
+    .section-title .tv-icon {
+      width: 30px; height: 30px;
+    }
+
+    footer {
+      padding: 3rem 1rem 4rem;
+      background: #0c0d11;
+      color: #66707f;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,.04);
+    }
+    footer a { color: var(--primary); text-decoration: none; }
+
+    .toast {
+      position: fixed;
+      bottom: 20px; left: 50%; transform: translateX(-50%);
+      background: #1d222b;
+      color: var(--text);
+      padding: .75rem 1rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      opacity: 0; pointer-events: none;
+      transition: opacity .3s, transform .3s;
+      z-index: 9999;
+    }
+    .toast.show {
+      opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(-8px);
+    }
+
+    /* Media queries */
+    @media (max-width: 560px) {
+      .nav-links { display: none; }
     }
   </style>
 </head>
 <body>
+  <header>
+    <nav class="nav">
+      <a href="#top" class="brand">📺 IPTV <span class="tag">España & Colombia</span></a>
+      <div class="nav-links">
+        <a href="#es">🇪🇸 España</a>
+        <a href="#co">🇨🇴 Colombia</a>
+        <a href="#plus">🌍 Otros</a>
+        <a href="#como-usar">ℹ️ Cómo usar</a>
+      </div>
+    </nav>
+  </header>
 
-  <h1>📺 Mejores Listas IPTV Gratuitas de España</h1>
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <h1>Listas IPTV <span style="background: var(--gradient); -webkit-background-clip: text; color: transparent;">Gratis</span> de España y Colombia</h1>
+        <p class="lead">Enlaces siempre accesibles, confiables y recopilados de fuentes públicas. Incluye una sección con otros canales interesantes. Copia las URLs con un solo clic.</p>
+        <div class="btns" style="justify-content:center; margin-top: 2rem;">
+          <a class="btn tv" href="#es">🇪🇸 Canales de España</a>
+          <a class="btn tv" href="#co">🇨🇴 Canales de Colombia</a>
+          <a class="btn tv" href="#plus">🌍 Otros canales</a>
+        </div>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>1. IPTV-ORG (GitHub)</h2>
-    <p>Una de las listas más completas y conocidas, con canales organizados por país y género. Se actualiza automáticamente y es muy fácil de usar.</p>
-    <div class="btn-group">
-      <a class="btn" href="https://iptv-org.github.io/iptv/countries/es.m3u" target="_blank">Ver Lista M3U</a>
-      <a class="btn" href="https://github.com/iptv-org/iptv?tab=readme-ov-file#grouped-by-country" target="_blank">Información</a>
-    </div>
-    <div class="info">Canales nacionales y algunos regionales en abierto.</div>
-  </div>
+    <section class="section container" id="es">
+      <div class="section-title">
+        <svg class="tv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+        <h2>🇪🇸 Canales de España</h2>
+      </div>
+      <p class="lead" style="margin-bottom:1.8rem">Las mejores listas IPTV gratuitas con canales TDT nacionales y autonómicos, mantenidas por comunidades abiertas y proyectos españoles.</p>
 
-  <div class="card">
-    <h2>2. Free-TV España (GitHub)</h2>
-    <p>Archivo con tabla de canales, logos, nombres, enlaces y metadatos. Ideal para consultar antes de reproducir.</p>
-    <div class="btn-group">
-      <a class="btn" href="https://github.com/Free-TV/IPTV/blob/master/lists/spain.md" target="_blank">Ver Archivo</a>
-      <a class="btn" href="https://github.com/Free-TV/IPTV/blob/master/lists/spain.md" target="_blank">Información</a>
-    </div>
-    <div class="info">Formato visual en Markdown. Ideal para usuarios técnicos.</div>
-  </div>
+      <div class="grid">
+        <!-- iptv-org -->
+        <article class="card reveal">
+          <h3>IPTV-ORG <span class="flag">🇪🇸</span> <span class="tag">Lista + Info</span></h3>
+          <p>Una de las listas más completas y populares. Se actualiza automáticamente y está organizada por países.</p>
+          <div class="btns">
+            <a class="btn" href="https://iptv-org.github.io/iptv/countries/es.m3u" target="_blank">Abrir lista M3U</a>
+            <a class="btn outline" href="https://github.com/iptv-org/iptv?tab=readme-ov-file#grouped-by-country" target="_blank">Página de información</a>
+          </div>
+          <div class="copy-group">
+            <code>https://iptv-org.github.io/iptv/countries/es.m3u</code>
+            <button class="copy-btn" data-url="https://iptv-org.github.io/iptv/countries/es.m3u">Copiar URL</button>
+          </div>
+        </article>
 
-  <div class="card">
-    <h2>3. TDTChannels</h2>
-    <p>Proyecto español muy fiable que agrupa canales públicos y privados en abierto. Incluye televisión y radio.</p>
-    <div class="btn-group">
-      <a class="btn" href="https://www.tdtchannels.com/lists/tv.m3u8" target="_blank">Ver Lista M3U8</a>
-      <a class="btn" href="https://www.tdtchannels.com/" target="_blank">Web Oficial</a>
-    </div>
-    <div class="info">Una de las mejores opciones para canales españoles.</div>
-  </div>
+        <!-- Free-TV/IPTV -->
+        <article class="card reveal">
+          <h3>Free-TV / IPTV <span class="flag">🇪🇸</span> <span class="tag">Markdown + Streams</span></h3>
+          <p>Tabla con canales, metadatos y enlaces m3u8 directos. Una referencia útil para usuarios más técnicos.</p>
+          <div class="btns">
+            <a class="btn" href="https://github.com/Free-TV/IPTV/blob/master/lists/spain.md" target="_blank">Ver listado</a>
+            <a class="btn outline" href="https://github.com/Free-TV/IPTV/blob/master/lists/spain.md" target="_blank">Página de información</a>
+          </div>
+          <div class="copy-group">
+            <code>https://github.com/Free-TV/IPTV/blob/master/lists/spain.md</code>
+            <button class="copy-btn" data-url="https://github.com/Free-TV/IPTV/blob/master/lists/spain.md">Copiar URL</button>
+          </div>
+        </article>
 
+        <!-- TDTChannels -->
+        <article class="card reveal">
+          <h3>TDTChannels <span class="flag">🇪🇸</span> <span class="tag">Proyecto Español</span></h3>
+          <p>Recopila legalmente emisiones en abierto de TV y radio de toda España. Muy fiable para TDT nacional y autonómica.</p>
+          <div class="btns">
+            <a class="btn" href="https://www.tdtchannels.com/lists/tv.m3u8" target="_blank">Abrir lista M3U8</a>
+            <a class="btn outline" href="https://www.tdtchannels.com/" target="_blank">Web oficial</a>
+          </div>
+          <div class="copy-group">
+            <code>https://www.tdtchannels.com/lists/tv.m3u8</code>
+            <button class="copy-btn" data-url="https://www.tdtchannels.com/lists/tv.m3u8">Copiar URL</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="co">
+      <div class="section-title">
+        <svg class="tv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+        <h2>🇨🇴 Canales de Colombia</h2>
+      </div>
+      <p class="lead" style="margin-bottom:1.8rem">Lista actualizada, con sistemas automáticos para mantener activos los canales principales.</p>
+
+      <div class="grid">
+        <article class="card reveal">
+          <h3>Lista IPTV de Colombia <span class="flag">🇨🇴</span></h3>
+          <p>Incluye Caracol TV, RCN, Canal Uno, Señal Colombia y más.</p>
+          <div class="btns">
+            <a class="btn" href="https://raw.githubusercontent.com/Danialejo16/iptvcolombia/refs/heads/main/canalesactualizados.m3u" target="_blank">Abrir lista M3U</a>
+            <a class="btn outline" href="https://danialejo16.github.io/iptvcolombia/" target="_blank">Página del proyecto</a>
+          </div>
+          <div class="copy-group">
+            <code>https://raw.githubusercontent.com/Danialejo16/iptvcolombia/refs/heads/main/canalesactualizados.m3u</code>
+            <button class="copy-btn" data-url="https://raw.githubusercontent.com/Danialejo16/iptvcolombia/refs/heads/main/canalesactualizados.m3u">Copiar URL</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="plus">
+      <div class="section-title">
+        <svg class="tv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+        <h2>🌍 Otros canales interesantes</h2>
+      </div>
+      <p class="lead" style="margin-bottom:1.8rem">Selección de otros canales adicionales que pueden interesarte.</p>
+
+      <div class="grid">
+        <article class="card reveal">
+          <h3>Lista PLUS</h3>
+          <p>Canales adicionales, internacionales o temáticos.</p>
+          <div class="btns">
+            <a class="btn" href="https://raw.githubusercontent.com/Danialejo16/iptvcolombia/refs/heads/main/canalesplus.m3u" target="_blank">Abrir lista M3U</a>
+          </div>
+          <div class="copy-group">
+            <code>https://raw.githubusercontent.com/Danialejo16/iptvcolombia/refs/heads/main/canalesplus.m3u</code>
+            <button class="copy-btn" data-url="https://raw.githubusercontent.com/Danialejo16/iptvcolombia/refs/heads/main/canalesplus.m3u">Copiar URL</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="como-usar">
+      <div class="section-title">
+        <svg class="tv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+        <h2>ℹ️ Cómo usar estas listas</h2>
+      </div>
+      <div class="grid">
+        <article class="card reveal">
+          <h3>Reproductores compatibles</h3>
+          <p>Abre los enlaces <code>.m3u</code> o <code>.m3u8</code> en apps como:</p>
+          <ul>
+            <li>VLC Media Player (Windows, macOS, Linux, Android, iOS)</li>
+            <li>Kodi</li>
+            <li>TiviMate, OTT Navigator (Android TV)</li>
+            <li>IPTV Smarters, GSE IPTV (móvil)</li>
+          </ul>
+          <span class="badge">Solo canales en abierto (FTA)</span>
+        </article>
+        <article class="card reveal">
+          <h3>Consejos de estabilidad</h3>
+          <ul>
+            <li>Usa una buena conexión a Internet (preferible por cable o WiFi 5/6).</li>
+            <li>Si un enlace falla, vuelve a cargar la lista: muchas se actualizan automáticamente.</li>
+            <li>Evita reproductores desconocidos: usa apps populares y seguras.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con ❤️ por <a href="https://github.com/danialejo16" target="_blank">Danialejo</a> · Actualizado automáticamente cuando las fuentes lo permiten.</p>
+  </footer>
+
+  <div class="toast" id="toast">Copiado al portapapeles ✅</div>
+
+  <script>
+    // Reveal on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal, .card').forEach(el => observer.observe(el));
+
+    // Copy to clipboard
+    const toast = document.getElementById('toast');
+    function showToast(msg = 'Copiado al portapapeles ✅') {
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2000);
+    }
+
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const url = btn.getAttribute('data-url');
+        try {
+          await navigator.clipboard.writeText(url);
+          showToast();
+        } catch (e) {
+          console.error(e);
+          showToast('No se pudo copiar, copia manualmente');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
