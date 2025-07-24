@@ -1,111 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Listas IPTV España Gratis</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f9;
-      color: #333;
-      margin: 0;
-      padding: 20px;
-    }
+## 📺 Las Mejores Listas IPTV Gratuitas de Canales Españoles
 
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-      margin-bottom: 30px;
-    }
+Si buscas disfrutar de los canales de televisión españoles de forma gratuita, legal y sin complicaciones, aquí te presentamos **las mejores listas IPTV actualizadas**, completamente accesibles y listas para usarse en cualquier reproductor compatible como VLC, Kodi o aplicaciones IPTV para Android, Smart TV o iOS.
 
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-      margin-bottom: 30px;
-      padding: 20px;
-      transition: transform 0.3s;
-    }
+---
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+### ✅ 1. Lista IPTV de España de *iptv-org*
 
-    .card h2 {
-      color: #2980b9;
-      margin-top: 0;
-    }
+📄 **Lista directa**:
+🔗 [https://iptv-org.github.io/iptv/countries/es.m3u](https://iptv-org.github.io/iptv/countries/es.m3u)
 
-    .btn-group {
-      margin-top: 15px;
-    }
+ℹ️ **Página de información**:
+🔗 [iptv-org GitHub - Sección por países](https://github.com/iptv-org/iptv?tab=readme-ov-file#grouped-by-country)
 
-    .btn {
-      display: inline-block;
-      background: #3498db;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 10px;
-      transition: background 0.3s;
-    }
+Esta es una de las listas más completas y conocidas del mundo IPTV libre. Está mantenida por la comunidad de *iptv-org*, y ofrece canales por países, géneros, idioma, resolución, etc. La lista de España incluye tanto canales nacionales como algunos regionales. Se actualiza automáticamente.
 
-    .btn:hover {
-      background: #2980b9;
-    }
+---
 
-    .info {
-      font-size: 0.95em;
-      color: #555;
-      margin-top: 10px;
-    }
+### ✅ 2. Lista IPTV de España de *Free-TV/IPTV*
 
-    @media screen and (max-width: 600px) {
-      .btn {
-        display: block;
-        margin-bottom: 10px;
-        width: 100%;
-        text-align: center;
-      }
-    }
-  </style>
-</head>
-<body>
+📄 **Archivo Markdown (info + enlaces)**:
+🔗 [https://github.com/Free-TV/IPTV/blob/master/lists/spain.md](https://github.com/Free-TV/IPTV/blob/master/lists/spain.md)
 
-  <h1>📺 Mejores Listas IPTV Gratuitas de España</h1>
+Esta lista combina información organizada en tablas (en formato Markdown) con enlaces m3u8 directos. Es ideal para quienes desean tener una referencia visual antes de usar los enlaces. Contiene canales en abierto y se actualiza regularmente desde múltiples fuentes.
 
-  <div class="card">
-    <h2>1. IPTV-ORG (GitHub)</h2>
-    <p>Una de las listas más completas y conocidas, con canales organizados por país y género. Se actualiza automáticamente y es muy fácil de usar.</p>
-    <div class="btn-group">
-      <a class="btn" href="https://iptv-org.github.io/iptv/countries/es.m3u" target="_blank">Ver Lista M3U</a>
-      <a class="btn" href="https://github.com/iptv-org/iptv?tab=readme-ov-file#grouped-by-country" target="_blank">Información</a>
-    </div>
-    <div class="info">Canales nacionales y algunos regionales en abierto.</div>
-  </div>
+---
 
-  <div class="card">
-    <h2>2. Free-TV España (GitHub)</h2>
-    <p>Archivo con tabla de canales, logos, nombres, enlaces y metadatos. Ideal para consultar antes de reproducir.</p>
-    <div class="btn-group">
-      <a class="btn" href="https://github.com/Free-TV/IPTV/blob/master/lists/spain.md" target="_blank">Ver Archivo</a>
-      <a class="btn" href="https://github.com/Free-TV/IPTV/blob/master/lists/spain.md" target="_blank">Información</a>
-    </div>
-    <div class="info">Formato visual en Markdown. Ideal para usuarios técnicos.</div>
-  </div>
+### ✅ 3. Lista IPTV de *TDTChannels*
 
-  <div class="card">
-    <h2>3. TDTChannels</h2>
-    <p>Proyecto español muy fiable que agrupa canales públicos y privados en abierto. Incluye televisión y radio.</p>
-    <div class="btn-group">
-      <a class="btn" href="https://www.tdtchannels.com/lists/tv.m3u8" target="_blank">Ver Lista M3U8</a>
-      <a class="btn" href="https://www.tdtchannels.com/" target="_blank">Web Oficial</a>
-    </div>
-    <div class="info">Una de las mejores opciones para canales españoles.</div>
-  </div>
+📄 **Lista directa**:
+🔗 [https://www.tdtchannels.com/lists/tv.m3u8](https://www.tdtchannels.com/lists/tv.m3u8)
 
-</body>
-</html>
+🌐 **Web oficial**:
+🔗 [https://www.tdtchannels.com/](https://www.tdtchannels.com/)
+
+*TDTChannels* es una iniciativa española que recopila de forma legal las emisiones en abierto de todos los canales de la TDT nacional y autonómica. Su lista M3U es probablemente la **más fiable** en cuanto a contenido español, e incluye emisoras de radio y televisión públicas y privadas, con logos y metadatos.
+
+---
+
+### 🎬 ¿Cómo usar estas listas?
+
+1. Copia el enlace `.m3u` y ábrelo con **VLC Media Player** u otra app compatible.
+2. También puedes importarlos en **Kodi**, **TiviMate**, **IPTV Smarters**, **GSE IPTV**, etc.
+3. Se reproducen por streaming, así que asegúrate de tener una buena conexión a internet.
+
+---
+
+### ⚠️ Importante
+
+Estas listas contienen **canales en abierto (FTA)**, es decir, **sin ningún tipo de bloqueo ni requerimiento de pago**, recopilados desde fuentes oficiales o públicas. No fomentamos el uso de listas con contenido pirateado.
