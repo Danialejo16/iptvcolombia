@@ -1,7 +1,7 @@
 #EXTM3U url-tvg="https://www.open-epg.com/files/colombia1.xml"
 
 #EXTINF:-1 tvg-id="Caracol.co" tvg-name="Caracol TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/29/Caracol_Televisi%C3%B3n_logo_2023.png", Caracol TV
-https://cdn3.chatytvgratis.live/hls/stream1.m3u8
+https://hls.mywebtv.cloud/hls/stream1b.m3u8
 
 #EXTINF:-1 tvg-id="Caracol HD.co" tvg-name="Caracol TV HD2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/CaracolHD2-2023.png/190px-CaracolHD2-2023.png", Caracol TV HD2
 https://cdn3.chatytvgratis.live/hls/stream2.m3u8
